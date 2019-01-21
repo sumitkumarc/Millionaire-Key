@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nanumgothicregular"
+            android:gravity="center"
+            android:text="Contact us"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/icon_cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/cancel"
+            android:tint="@color/colorPrimaryDark" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svdata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bt"
+
+        android:layout_below="@+id/ll_title"
+        android:layout_marginBottom="25dp">
+
+        <LinearLayout
+            android:id="@+id/useimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For Information and feedback"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="info@millionairekey.in"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For Inquriy of your rewards"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="sales@millionairekey.in"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_4"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For invoice and Payment status"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="payment@millionairekey.in"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="For invoice and Payment status"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="payment@millionairekey.in"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Contact Number"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="+91 - 99093 - 95095"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorPrimaryDark"></View>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+</RelativeLayout>

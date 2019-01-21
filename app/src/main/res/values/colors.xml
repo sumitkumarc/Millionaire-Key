@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ED1E54</color>
+    <color name="colorPrimaryDark">#ED1E54</color>
+    <color name="colorAccent">#ED1E54</color>
+    <color name="background">#f6f7f9</color>
+    <color name="grey_4a">#ff4a4a4a</color>
+    <color name="grey_8f">#ff8f8f8f</color>
+    <color name="grey_4d">#ff4d4d4d</color>
+    <color name="custom_progress_background">#ff3c3a3b</color>
+    <color name="custom_progress_red_progress">#ffff4444</color>
+    <color name="custom_progress_red_progress_half">#7fff4444</color>
+    <color name="white">#FFFF</color>
+    <color name="a1">#F57461</color>
+    <color name="duskYellow">#FFDF00</color>
+    <color name="lightGrey">#D3D3D3</color>
+    <color name="a2">#ca6253</color>
+    <color name="pink">#d1626c</color>
+    <color name="b1">#EC6E79</color>
+    <color name="b2">#d1626c</color>
+
+    <color name="c1">#C17292</color>
+    <color name="c2">#b16a87</color>
+
+    <color name="d1">#F3B6B1</color>
+    <color name="d2">#d19c98</color>
+
+
+    <color name="tw__blue_default">#ED1E54</color>
+    <color name="tw__blue_pressed">#ED1E54</color>
+    <color name="tw__blue_pressed_light">#ffe1e8ed</color>
+    <color name="tw__light_gray">#ccd6dd</color>
+    <color name="tw__solid_white">#ffffffff</color>
+    <color name="tw__transparent">#00000000</color>
+
+</resources>

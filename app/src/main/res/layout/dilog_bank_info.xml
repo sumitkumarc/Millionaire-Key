@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Bank Information"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:fontFamily="@font/bitter_regular"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:text="One Time Pay 1000₹"-->
+                    <!--android:textColor="@color/colorPrimaryDark"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:textStyle="bold" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.20"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="+ 91 -"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="20sp" />-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_adharno"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        app:errorTextAppearance="@style/error_appearance"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/ed_AdharNo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="12"
+                            android:hint="Adhar card Number"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+                            android:maxLines="1"
+                            android:maxLength="12"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/grey_4d"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.20"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="+ 91 -"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="20sp" />-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_panno"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        app:errorTextAppearance="@style/error_appearance"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/ed_panno"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="PAN Number"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="10"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/grey_4d"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.20"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="+ 91 -"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="20sp" />-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_bankname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        app:errorTextAppearance="@style/error_appearance"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/ed_bankname"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Bank Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/grey_4d"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.20"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="+ 91 -"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="20sp" />-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_brname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        app:errorTextAppearance="@style/error_appearance"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/ed_brname"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Branch Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/grey_4d"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.20"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="+ 91 -"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="20sp" />-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_Acc_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        app:errorTextAppearance="@style/error_appearance"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/ed_Acc_no"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Account No"
+                            android:imeOptions="actionNext"
+                            android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+                            android:maxLines="1"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/grey_4d"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.20"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="+ 91 -"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="20sp" />-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/in_ifcicode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        app:errorTextAppearance="@style/error_appearance"
+                        >
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/ed_ifcicode"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="IFSC Code"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:textColor="@color/grey_4d"
+                            android:textSize="14dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bt"
+        android:layout_below="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardElevation="5dp"
+            card_view:cardMaxElevation="10dp">
+
+            <Button
+                android:id="@+id/bt_prosstopay"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="0dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/bitter_regular"
+                android:padding="5dp"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

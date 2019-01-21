@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/app_home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_user"
+            android:title="@string/app_profile" />
+
+        <item
+            android:id="@+id/nav_chnagepwd"
+            android:icon="@drawable/ic_changepwc"
+            android:title="@string/app_password" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/newspaper"
+            android:title="@string/app_news" />
+        <item
+            android:id="@+id/nav_Des"
+            android:icon="@drawable/around"
+            android:title="@string/app_travel" />
+        <item
+            android:id="@+id/nav_achievement"
+            android:icon="@drawable/achivement"
+            android:title="Achievement" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/app_about" />
+
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_phone_book"
+                android:title="@string/app_contect" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/app_share" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_favorites"
+                android:title="@string/app_rate" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activity.MyProfileActivity">
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:gravity="center"
+                    android:text="Personal Information"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:padding="2dp"
+                    android:text="Referral Code"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_referralcode"
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:padding="2dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:padding="2dp"
+                    android:text="User Name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_fname"
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:padding="2dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"
+                android:visibility="gone"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:fontFamily="@font/nanumgothicregular"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:padding="2dp"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:text="Full Name"
+                    android:textSize="18sp" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:padding="2dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:padding="2dp"
+                    android:text="Birth Date"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_birthdate"
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:padding="2dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:padding="2dp"
+                    android:text="Phone No. "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_phoneno"
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:padding="2dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:padding="2dp"
+                    android:text="Gender"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:padding="2dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:padding="2dp"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:text="Address"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:lines="3"
+                    android:padding="2dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="2dp"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_main_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Bank KYC Information"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="2dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:padding="2dp"
+                        android:text="Adhar Card"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_adharcard"
+                        android:layout_width="0dp"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:padding="2dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="2dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:padding="2dp"
+                        android:text="PAN Card"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_pancard"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:padding="2dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="2dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:padding="2dp"
+                        android:text="Bank Name"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_bankname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:padding="2dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="2dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:padding="2dp"
+                        android:text="Branch Name"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_branchname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:padding="2dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="2dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:padding="2dp"
+                        android:text="Account No"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_accountno"
+                        android:layout_width="0dp"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:padding="2dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="2dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:padding="2dp"
+                        android:text="IFSC Code"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_ifsccode"
+                        android:layout_width="0dp"
+                        android:fontFamily="@font/nanumgothicregular"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:padding="2dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="2dp"></View>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--app:cardCornerRadius="100dp"-->
+    <!--app:cardElevation="0dp"-->
+    <!--app:cardPreventCornerOverlap="false"-->
+    <!--app:cardUseCompatPadding="true"-->
+
+    <!--&gt;-->
+
+    <ImageView
+        android:id="@+id/iv_loder"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" />
+    <!--</android.support.v7.widget.CardView>-->
+</RelativeLayout>

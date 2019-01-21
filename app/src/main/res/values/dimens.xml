@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="tw__btn_bar_margin_left">8dp</dimen>
+    <dimen name="tw__btn_bar_margin_right">8dp</dimen>
+    <dimen name="tw__login_btn_drawable_padding">4dp</dimen>
+    <dimen name="tw__login_btn_height">32dp</dimen>
+    <dimen name="tw__login_btn_left_padding">8dp</dimen>
+    <dimen name="tw__login_btn_radius">5dp</dimen>
+    <dimen name="tw__login_btn_right_padding">12dp</dimen>
+    <dimen name="tw__login_btn_text_size">14sp</dimen>
+    <dimen name="tw__padding_permission_horizontal_container">24dp</dimen>
+    <dimen name="tw__padding_permission_vertical_container">24dp</dimen>
+    <dimen name="tw__permission_description_text_size">16sp</dimen>
+    <dimen name="tw__permission_title_text_size">24sp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+</resources>

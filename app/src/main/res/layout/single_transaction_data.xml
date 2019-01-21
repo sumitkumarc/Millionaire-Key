@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/tra"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:lines="1"
+                    android:padding="2dp"
+                    android:text="Request id :"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_Request_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:lines="1"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_Withrow_bal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:fontFamily="@font/nanumgothicregular"
+                android:gravity="end"
+                android:padding="2dp"
+                android:text="- 100 $"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"></View>
+
+        <TextView
+            android:id="@+id/tv_Cur_bal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumgothicregular"
+            android:padding="2dp"
+            android:text="Balance : 100 $"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:lines="1"
+                    android:padding="2dp"
+                    android:text="Request Date :"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicregular"
+                    android:padding="2dp"
+                    android:text="Jan 2, 2018"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:fontFamily="@font/nanumgothicregular"
+                android:gravity="end"
+                android:padding="2dp"
+                android:text="Status : Success"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
